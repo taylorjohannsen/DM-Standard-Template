@@ -1,0 +1,299 @@
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.backToTopContainer {
+    width: 200px;
+    position: relative;
+    background-color: #3D3D3D;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        position: static;
+    }
+}
+
+.mainFooter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+
+    @media (max-width: 800px) {
+        width: auto;
+    }
+
+    @media (max-width: 600px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.backToTop {
+    position: absolute;
+    bottom: 100px;
+    transform: rotate(270deg);
+
+    @media (max-width: 1000px) {
+        transform: none;
+        position: static;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.backToTopText {
+    text-decoration: none;
+    padding-left: 50px;
+    color: grey;
+    white-space: nowrap;
+}
+
+.topSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.767);
+
+    @media (max-width: 600px) {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+}
+
+.footerLogoDealer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footerLogoImage {
+    width: 150px;
+    height: auto;
+
+    @media (max-width: 600px) {
+        width: 100px;
+    }
+}
+
+.footerDealer {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    border-left: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @media (max-width: 600px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+}
+
+.footerDealerAddress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.footerDealerAddressText {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.582);
+
+    @media (max-width: 800px) {
+        font-size: 20px;
+    }
+}
+
+.footerMarker {
+    font-size: 55px;
+}
+
+.footerLinksContainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.singleLinkCont {
+    padding-bottom: 40px;
+}
+
+.subLinkContainer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.singleLink {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.singleSubLink {
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.singleLink:hover,
+.singleSubLink:hover {
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.singleLinkPadding {
+    padding-bottom: 5px;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.connectLink {
+    padding-bottom: 30px;
+
+    @media (max-width: 800px) {
+        padding-bottom: 0;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 600px) {
+        padding-right: 20px;
+    }
+}
+
+.socialImage {
+    height: 40px;
+    width: auto;
+    padding-right: 20px;
+
+    @media (max-width: 800px) {
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    @media (max-width: 600px) {
+        padding-right: 10px;
+    }
+}
+
+.footerLegalContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    @media (max-width: 1400px) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.footerPrivacyContainer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.274);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+        justify-content: center;
+    }
+}
+
+.footerPrivacyLink,
+.footerPrivacyLinkDiv {
+    color: rgba(255, 255, 255, 0.274);
+    text-decoration: none;
+    padding: 5px;
+
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.madeWithLove {
+    color: rgba(255, 255, 255, 0.274);
+    padding-left: 5px;
+
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 600px) {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.dealerMasters {
+    text-decoration: none;
+}
+
+.dealerMasters:hover,
+.footerPrivacyLink:hover {
+    color: rgba(255, 255, 255, 0.137);
+}
+
+.desktopSocial {
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
+.tabletSocial {
+    display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    @media (max-width: 600px) {
+        justify-content:space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
